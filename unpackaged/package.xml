@@ -5,8 +5,8 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>Candidate</members>
-        <members>myobj</members>
+        <members>Candidate__c</members>
+        <members>myobj__c</members>
         <name>CustomObject</name>
     </types>
 
