@@ -1,0 +1,51 @@
+<apex:page standardController="Account" extensions="LinkedInInfoGettingController" >
+    <h1>Edit Account</h1>
+    <apex:form >    	
+        <table> 
+            
+        	<tr>
+            	<td align="right">
+                	<apex:outputField value="{! Account.Name }" />                    
+                </td>
+                <td>
+                    <apex:inputField value="{! Account.Name }"/> 
+                </td>
+             </tr> 
+            
+             <tr>
+                 <td align="right">
+                    <apex:outputField value="{! Account.Site }"/>                     
+                 </td>
+                 <td>
+                    <apex:inputField value="{! Account.Site }"/>
+                 </td>
+             </tr> 
+            
+             <tr>
+                 <td align="right">
+                    <apex:outputField value="{! Account.Industry }"/>            
+                 </td>
+                 <td>
+                    <apex:inputField value="{! Account.Industry }"/>
+                 </td>
+             </tr>
+            
+             <tr>
+                 <td align="right">
+                     <apex:outputField value="{! Account.Description }"/>              
+                 </td>
+                 <td>
+                    <apex:inputField value="{! Account.Description }"/>
+                 </td>
+             </tr>
+            
+            <tr>
+               <td>
+                  <apex:commandButton action="{! save }" value="Save" />
+                  <apex:commandButton action="{! getProfileInfo }" value="Get From LinkeIn" />
+               </td>
+            </tr>
+            
+        </table>   
+    </apex:form>
+</apex:page>

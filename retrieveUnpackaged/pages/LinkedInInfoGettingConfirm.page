@@ -1,0 +1,5 @@
+<apex:page controller="LIInfoGettingConfirmController">
+    <apex:form >  
+    <apex:commandButton action="{! continueAction }" value="Continue" />  
+    </apex:form>
+</apex:page>

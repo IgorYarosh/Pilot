@@ -4,18 +4,13 @@
         <members>*</members>
         <name>ApexClass</name>
     </types>
-     <types>
+    <types>
         <members>*</members>
         <name>ApexPage</name>
-    </types> 
+    </types>
     <types>
         <members>Account.Get_LinkedIn_info</members>
         <name>WebLink</name>
     </types>
-<!--      <types>
-        <members>Candidate__c</members>
-        <members>myobj__c</members>
-        <name>CustomObject</name>
-    </types> -->
     <version>38.0</version>
 </Package>
