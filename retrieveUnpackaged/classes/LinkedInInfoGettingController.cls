@@ -7,14 +7,14 @@ public class LinkedInInfoGettingController {
     
     
     public PageReference getProfileInfo() {
-        //String id = ApexPages.currentPage().getParameters().get('id'); 
+        String id = ApexPages.currentPage().getParameters().get('id'); 
         Http httpProtocol = new Http();
         HttpRequest request = new HttpRequest();
         String endpoint = 'https://www.linkedin.com/uas/oauth2/authorization?response_type=code&'+
             'client_id=77g4221ckt4gaw&'+
-            'redirect_uri=https://c.ap2.visual.force.com/apex/LinkedInInfoGettingConfirm?core.apexpages.request&state=r_basicprofile';
+            'redirect_uri=https://c.ap2.visual.force.com/apex/LinkedInInfoGettingConfirm?core.apexpages.request&state='+id;
             
-        //acc.Description = endpoint;
+         //acc.Description = endpoint;
          PageReference pageRef = new PageReference(endpoint);
      return pageRef; 
              
